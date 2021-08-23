@@ -10,6 +10,6 @@ const productSchema = new Schema(
 		size: { type: String},
 		
 	},
-	{ timestamps: true, toJSON: { getters: true }, id: false }
+	{ timestamps: true }
 );
 export default mongoose.model("Product", productSchema, "products");
